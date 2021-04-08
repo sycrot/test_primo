@@ -1,4 +1,8 @@
 /* HEADER */
+img {
+    width: 100%;
+}
+
 .title {
     position: absolute;
     z-index: 3;
@@ -159,6 +163,7 @@
 }
 .people__description {
     color: #5c5c5c;
+    padding: 2em;
 }
 .people__img_desktop {
     display: none;
@@ -228,6 +233,12 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
+    body {
+        background: linear-gradient(#cecece 30%,transparent, transparent 70%, #cecece);
+    }
+    .top_content {
+        background: linear-gradient(white 65%, #dbdbdb);
+    }
     /* HEADER */
     .header {
         position: relative;
@@ -263,7 +274,7 @@ footer {
 
     /* SCHEDULE */
     .schedule {
-        margin-top: 18vw;
+        margin-top: 20.5vw;
     }
     .schedule__back {
         background-image: url(../img/background_schedule_desktop.png);
@@ -271,7 +282,7 @@ footer {
         width: 100%;
     }
     .schedule__text {
-        margin: 10vw 0 0 0;
+        margin: 11vw 0 0 0;
         text-align: center;
         line-height: 1;
         width: 100%;
@@ -281,7 +292,7 @@ footer {
         font-size: 3vw;
     }
     .schedule__text h1 {
-        font-family: Globotipo Rounded Black;
+        font-family: Globotipo Rounded Regular;
         font-size: 5vw;
     }
 
@@ -290,7 +301,6 @@ footer {
         padding: 4em 8em;
         margin: -10em 0 -13em 0;
         text-align: center;
-        
     }
     .arrow {
         width: 8vw;
@@ -303,9 +313,10 @@ footer {
     /* UPLOAD */
     .upload__title-description {
         padding: 0 12em;
+        margin-top: -6em;
     }
     .upload__title-description h1 {
-        font-size: 10vw;
+        font-size: 12vw;
         -webkit-text-stroke-width: 0.5px;
         -webkit-text-stroke-color: #fff;
     }
@@ -321,8 +332,9 @@ footer {
         padding: 0.2em;
         font-size: 2vw;
         border-radius: 1vw;
-        width: 40%;
-        margin: 5% 0 2% 30%;
+        width: 360px;
+        margin: 5% 0 2% 0;
+        margin-left: calc(50% - 180px);;
     }
     .seven-pillars ol {
         text-align: left;
@@ -335,7 +347,7 @@ footer {
     /* EVENT DESCRIPTION */
     .event {
         padding: 0 1vw;
-        margin: 8vw 0 0 8vw;
+        margin: 12vw 0 0 8vw;
         position: relative;
         box-sizing: border-box;
         text-align: center;
@@ -346,15 +358,22 @@ footer {
     }
     .event_d_p {
         margin: 2vw 0 0 0;
-        font-size: 1.2vw;
+        font-size: 2vw;
     }
     .event__description h1 {
         font-size: 3vw;
     }
     .event_d_s {
-        font-size: 1.5vw;
+        font-size: 1.2vw;
     }
 
+    .bottom-content {
+        background: #000 !important;
+    }
+
+    .bottom-content {
+        background: #000;
+    }
     /* PEOPLE */
     .people {
         position: relative;
@@ -370,6 +389,9 @@ footer {
     .people__img {
         width: 480px !important;
         margin-bottom: 10%;
+    }
+    .people__description {
+        padding: 0;
     }
     .people__description h2{
         color: #ff5f00;
@@ -404,7 +426,7 @@ footer {
     }
     .people__img_desktop {
         display: block;
-        margin: 5px 0 0 60px;
+        margin: -8em 0 0 60px;
         width: 600px !important;
         overflow: hidden;
         box-sizing: border-box;
