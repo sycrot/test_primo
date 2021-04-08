@@ -18,7 +18,7 @@ body {
     width: 100%;
 }
 .img_logo {
-    width: 100%;
+    width: 200px;
 }
 
 /* FORM */
@@ -29,6 +29,7 @@ body {
 .form-login__form h1{
     color: #fff;
     font-family: Globotipo Rounded Light;
+    letter-spacing: 1px;
 }
 .form__input-email {
     width: 100%;
@@ -47,6 +48,11 @@ body {
     background-color: #fff;
     border-radius: 2em;
     font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.form__btn-submit:hover {
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 /* TEXT BOTTOM */
@@ -62,7 +68,7 @@ body {
 
 @media screen and (min-width: 768px) {
     .img_logo {
-        width: 35%;
+        width: 320px;
         margin-top: 5em;
     }
 

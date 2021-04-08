@@ -393,6 +393,9 @@ footer {
     .people__description {
         padding: 0;
     }
+    .people_1 .people__description {
+        padding: 0 5em;
+    }
     .people__description h2{
         color: #ff5f00;
     }
@@ -441,13 +444,13 @@ footer {
     .footer-description {
         float: left;
         width: 100%;
-        position: absolute;
-        margin-top: 2400px;
+        position: relative;
+        margin: -4vw 0 -50vw 0;
     }
     .footer-description__img2 {
         width: 90%;
         position: relative;
-        display: block;
+        display: flex;
         bottom: 0;
         margin-left: 10%;
     }
@@ -458,11 +461,10 @@ footer {
         width: 350px;
     }
     footer h1{
-        position: relative;
         color: #fff;
         font-size: 12vw;
         width: 100%;
-        margin: 40% 0 0 0;
+        margin: 30% 0 0 0;
         float: left;
     }
     footer {
@@ -472,7 +474,6 @@ footer {
     }
     .background-footer {
         height: 70vw;
-        margin-top: 15vw;
         /* border-style: solid;
         border-color: transparent #ff5f00 #fdad00 #ff5f00;
         border-width: 70px 350px 0 0; */
