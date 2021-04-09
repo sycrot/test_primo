@@ -81,7 +81,7 @@ img {
 }
 .background-section-main {
     width: 100%;
-    height: 220vw;
+    height: 300vw;
     position: absolute;
     margin-top: 30vw;
     background-image: url(../img/background_section_main.png);
@@ -111,12 +111,13 @@ img {
     -webkit-text-stroke-color: #fff;
 }
 .upload__title-description p {
-    font-size: 4vw;
+    font-size: 3.5vw;
 }
 
 .seven-pillars {
     padding: 0 20%;
     position: relative;
+    height: 40vw;
 }
 .seven-pillars__title {
     display: block;
@@ -124,35 +125,36 @@ img {
     text-align: center;
     color: #fff;
     padding: 0.4em;
-    font-size: 5vw;
+    font-size: 4vw;
     border-radius: 2vw;
 }
 .seven-pillars ol {
     color: #fff;
     width: 100%;
-    padding: 0 1em;
-    font-size: 4vw;
+    font-size: 3.5vw;
+    columns: 1;
+    margin-top: 1vw;
 }
 
 /* EVENT DESCRIPTION */
 .event {
     padding: 0 1vw;
-    margin: 3vw 0 0 0;
+    margin: 18vw 0 0 0;
     position: relative;
-    box-sizing: border-box;
     text-align: center;
     color: #fff;
     line-height: 1;
+    height: 12vw;
 }
 .event_d_p {
-    margin: 5vw 0 0 0;
-    font-size: 4vw;
+    margin: 3vw 0 0 0;
+    font-size: 3.5vw;
 }
 .event__description h1 {
-    font-size: 9vw;
+    font-size: 6vw;
 }
 .event_d_s {
-    font-size: 5vw;
+    font-size: 3vw;
 }
 
 /* PEOPLE */
@@ -168,23 +170,24 @@ img {
 .people__img_desktop {
     display: none;
 }
+.img_p_desktop {
+    display: none;
+}
 .people img {
     width: 80px;
-    margin-bottom: 10%;
+    margin: 10vw 0 10vw 0;
 }
 .people__description h2{
     color: #ff5f00;
+    font-size: 22px;
+    font-family: Globotipo Rounded Black;
 }
 .people__description h3 {
-    font-size: 14px;
+    font-size: 12px;
 }
 .people__description p {
     margin-top: 12px;
     font-size: 12px;
-}
-.people__description8 {
-    padding: 30px;
-    text-align: center;
 }
 
 /* ///// IMGS */
@@ -194,7 +197,13 @@ img {
 
 /* FOOTER DESCRIPTION */
 .footer_content {
-    margin-top: 60%;
+    margin-top: 20%;
+}
+.footer_content__description {
+    padding: 30px;
+    text-align: center;
+    padding: 0 4vw;
+    margin: 0 0 65vw 0;
 }
 .footer__logo {
     width: 50vw;
@@ -301,6 +310,7 @@ footer {
         padding: 4em 8em;
         margin: -10em 0 -13em 0;
         text-align: center;
+        height: 32vw;
     }
     .arrow {
         width: 8vw;
@@ -313,7 +323,9 @@ footer {
     /* UPLOAD */
     .upload__title-description {
         padding: 0 12em;
-        margin-top: -6em;
+        margin-top: -8em;
+        height: 15vw;
+        margin-bottom: 7vw;
     }
     .upload__title-description h1 {
         font-size: 12vw;
@@ -321,11 +333,12 @@ footer {
         -webkit-text-stroke-color: #fff;
     }
     .upload__title-description p {
-        font-size: 2vw;
+        font-size: 1.5vw;
     }
 
     .seven-pillars {
         padding: 0 10%;
+        height: 20vw;
     }
     .seven-pillars__title {
         background: linear-gradient(#fdad00,#ff5f00);
@@ -337,61 +350,80 @@ footer {
         margin-left: calc(50% - 180px);;
     }
     .seven-pillars ol {
-        text-align: left;
         padding: 0 1em;
         font-size: 1.5vw;
-        flex-direction: column;
-        display: flex;
+        width: 80%;
+        margin-top: 4vw;
+        columns: 2;
+    }
+    .seven-pillars li {
+        position: relative;
+    }
+    .seven-pillars__list {
+        width: 100%;
+        height: 5vw;
+        margin-bottom: 8vw;
+        position: relative;
     }
 
     /* EVENT DESCRIPTION */
     .event {
-        padding: 0 1vw;
-        margin: 12vw 0 0 8vw;
-        position: relative;
-        box-sizing: border-box;
+        padding: 0 0.5vw;
+        margin: 14vw 0 0 5vw;
         text-align: center;
         color: #fff;
         line-height: 1;
         float: left;
-        width: 40%;
+        width: 40vw;
+        height: 10vw;
     }
     .event_d_p {
         margin: 2vw 0 0 0;
-        font-size: 2vw;
+        font-size: 1.3vw;
     }
     .event__description h1 {
-        font-size: 3vw;
+        font-size: 2vw;
     }
     .event_d_s {
         font-size: 1.2vw;
     }
 
-    .bottom-content {
-        background: #000 !important;
-    }
-
-    .bottom-content {
-        background: #000;
-    }
     /* PEOPLE */
     .people {
         position: relative;
         width: 100%;
     }
     .people_articless {
-        display: grid;
-        grid-template-columns: repeat(2, 500px);
         float: left;
-        margin-top: -10vw;
-        margin-left: calc(50% - 500px);
+        margin-top: 5vw;
+        margin-left: calc(50% - 40vw);
     }
+    .people_article:nth-child(n+1) {
+        display: grid;
+        grid-template-columns: repeat(2, 40vw);
+        height: 30vw;
+    }
+
+    .people_article:nth-child(odd) .img-people{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .people_article:nth-child(odd) .people__description {
+        grid-column: 2;
+    }
+
+    
     .people__img {
         width: 48vw !important;
-        margin-bottom: 10%;
     }
-    .people_1 .people__description {
-        padding: 0 2em;
+    .people__img_at {
+        width: 30vw !important;
+    }
+    .people__img2, .people__img4, .people__img5 {
+        display: none;
+    }
+    .people__description {
+        margin-top: calc(50% - 4vw);;
     }
     .people__description h2{
         color: #ff5f00;
@@ -403,12 +435,6 @@ footer {
         margin-top: 2vw;
         font-size: 1.3vw;
     }
-    .people__description8 {
-        float: left;
-        text-align: center;
-        width: 100%;
-        padding: 0 10em;
-    }
 
     /* ///// IMGS */
     .people__img {
@@ -418,21 +444,25 @@ footer {
         float: left;
         width: 50%;
     }
-    .people_r_a {
-        margin-top: 14vw !important;
-    }
-    .people_l_a {
-        margin-top: -2em !important;
-    }
     .people__img_desktop {
         display: block;
-        margin: 2em 0 0 0;
+        margin: 1vw 0 0 0;
         width: 50vw !important;
+    }
+    .img_p_desktop {
+        display: inline-block;
     }
 
     /* FOOTER DESCRIPTION */
     .footer_content {
         margin: 0;
+    }
+    .footer_content__description {
+        float: left;
+        text-align: center;
+        width: 100%;
+        padding: 0 10em;
+        margin: 20vw 0 0 0;
     }
     .footer-description {
         float: left;
