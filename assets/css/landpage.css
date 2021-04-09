@@ -168,8 +168,7 @@ img {
     display: none;
 }
 .people img {
-    width: 80px;
-    margin: 10vw 0 10vw 0;
+    margin-top: 10vw;
 }
 .people__description {
     line-height: 1;
@@ -189,10 +188,8 @@ img {
     margin-top: 3vw;
     font-size: 3vw;
 }
-
-/* ///// IMGS */
 .people__img_at {
-    width: 230px !important;
+    width: 65vw !important;
 }
 
 /* FOOTER DESCRIPTION */
@@ -308,9 +305,9 @@ footer {
     /* DESCRIPTION */
     .description {
         padding: 4em 8em;
-        margin: -10em 0 -13em 0;
+        margin-top: -10em;
         text-align: center;
-        height: 32vw;
+        height: 10vw;
     }
     .arrow {
         width: 8vw;
@@ -323,7 +320,7 @@ footer {
     /* UPLOAD */
     .upload__title-description {
         padding: 0 12em;
-        margin-top: -8em;
+        margin-top: -11vw;
         height: 15vw;
         margin-bottom: 7vw;
     }
@@ -337,7 +334,7 @@ footer {
     }
 
     .seven-pillars {
-        padding: 0 10%;
+        padding: 0 10vw;
         height: 12vw;
     }
     .seven-pillars__title {
@@ -345,9 +342,9 @@ footer {
         padding: 0.2em;
         font-size: 2vw;
         border-radius: 1vw;
-        width: 360px;
+        width: 28vw;
         margin: 5% 0 2% 0;
-        margin-left: calc(50% - 180px);;
+        margin-left: calc(50% - 14vw);;
     }
     .seven-pillars ol {
         padding: 0 1em;
@@ -362,7 +359,6 @@ footer {
     .seven-pillars__list {
         width: 100%;
         height: 5vw;
-        margin-bottom: 8vw;
         position: relative;
     }
 
